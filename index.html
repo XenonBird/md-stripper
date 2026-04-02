@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureText | Markdown Stripper</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>PureText</h1>
+        <p>Remove Markdown formatting instantly.</p>
+      </header>
+
+      <main class="converter-box">
+        <div class="input-area">
+          <label for="markdown-input">Markdown Input</label>
+          <textarea
+            id="markdown-input"
+            placeholder="Paste your # Markdown **here**..."
+          ></textarea>
+        </div>
+
+        <div class="actions">
+          <button id="strip-btn" class="primary-btn">Strip Formatting</button>
+          <button id="copy-btn" class="secondary-btn">Copy Text</button>
+          <button id="clear-btn" class="danger-btn">Clear</button>
+        </div>
+
+        <div class="output-area">
+          <label for="plain-output">Plain Text Result</label>
+          <textarea
+            id="plain-output"
+            readonly
+            placeholder="Your clean text will appear here..."
+          ></textarea>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
